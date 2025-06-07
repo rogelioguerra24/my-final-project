@@ -1,0 +1,76 @@
+@media (max-width: 600px) {
+    /*The following code is to render the transition for the nav bar (Header Styling)*/
+    #main-navigation {
+        display: grid;
+        overflow: hidden;
+        grid-template-rows: 0fr; /*Here you define the start*/
+        transition: grid-template-rows 0.5s ease-out; /*Here you define the transition */
+    }
+    #main-navigation ul {
+        overflow: hidden; /*Here you hidden the overflow*/
+    }
+    #main-navigation.open {
+        grid-template-rows: 1fr; /*Here you define the end*/
+    }
+    .menuLinks {
+        display: block; 
+    }
+    .menuLinks li a {
+        width: 100%;
+    }
+    .menuLinks a:hover {
+        background-color: var(--secondary-color);
+        color: var(--contrast-color);
+    }
+
+    /*To set or resize the button and its content*/
+    #myButton {
+        display:block;
+    }
+    #myButton::before {
+        content: "𓃑";
+    }
+    #myButton.open::before {
+        content: "𓏬";
+    }
+    #myButton {
+        font-size: 2rem;
+        background: none;
+        border: none;
+        color: var(--contrast-color);
+        cursor: pointer;
+        padding: 0 0.5rem 0.5rem;
+        justify-self: end;
+    }
+
+    /*Footer Styling*/
+    footer{
+        background: var(--secondary-color);
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-logo img {
+        width: 150px;
+    }
+    footer p{
+        font-size: 0.8em;
+        color: var(--contrast-color);
+    }
+    .footer-social{
+        
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 10px;
+        padding: 20px 10px;
+    }
+    .footer-social h3 {
+        grid-column: 1/7;
+        padding: 0;
+        color: var(--contrast-color);
+    }
+    .menuLinks-footer li a {
+        color: var(--contrast-color);
+    }
+    .menuLinks-footer li a:hover {
+        text-decoration: none;
+    }
+}
