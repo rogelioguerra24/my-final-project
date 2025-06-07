@@ -4,7 +4,7 @@
     --contrast-color: #FFFFFF;
     --font-color: #D9D9D9;
     --font-headers: "Bebas Neue", sans-serif;
-    --font-text: "Edu NSW ACT Hand Pre", cursive;
+    --font-text: "Alumni Sans SC", sans-serif;
 }
 
 * {
@@ -31,12 +31,15 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background: linear-gradient(to right, var(--primary-color), var(--secondary-color))
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
 }
 header section {
     display: flex;
     gap: 15px;
     align-items: center;
+}
+header section a:active {
+    transform: scale(0.9);
 }
 header section img {
     width: 40px;
@@ -81,7 +84,7 @@ footer p{
     color: var(--secondary-color);
     grid-column: 1/4;
     font-family: var(--font-text);
-    font-size: 0.9em;
+    font-size: 1.3em;
     font-weight: bold;
 }
 
@@ -105,18 +108,100 @@ footer p{
 }
 .footer-social h3 {
     font-family: var(--font-text);
-    font-size: 1em;
+    font-size: 1.5em;
     color: var(--secondary-color);
     grid-column: 1/4;
     padding: 0 0 10px;
 }
 
 
+/*Home Page Editing*/
+/*Header*/
+.home-hero-image {
+    height: 45rem;
+    background-image: linear-gradient(rgba(255, 230, 230, 0.2), rgb(0, 0, 0, 0.9)), url(https://wallpapers.com/images/high/4k-marvel-3840-x-2110-background-8vrz6my5uh37s1l3.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items:self-end;
+    padding: 0 0 60px;
+}
+.hero-text {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 25px;
+    padding: 0 0 10px;
+    text-align: center;
+    align-items: center;
+}
+.hero-text h1{
+    font-family: var(--font-headers);
+    font-size: 4rem;
+    color: var(--font-color);
+}
+.hero-text p {
+    font-family: var(--font-text);
+    font-size: 1.3em;
+    color: var(--contrast-color);
+}
+.hero-text a {
+    font-family: var(--font-headers);
+    cursor: pointer;
+    font-size: 2rem;
+    border: none;
+    text-decoration: none;
+    
+    padding: 5px;
+    border-radius: 8px;
+    background-image: linear-gradient(
+        150deg,
+        var(--primary-color),
+        var(--font-color),
+        #00bfff
+    );
+    color: var(--contrast-color);
+    display: flex;
+    
+}
+.hero-text a span{
+    background-color: #0B0C10;
+    padding: 5px 15px;
+    border-radius: 4px;
+    transition: .3s;
+}
+.hero-text a span:hover{
+    background: none;
+    color: var(--secondary-color);
+}
+.hero-text a:active {
+    transform: scale(0.9);
+}
 
 
-
-
-
-main{
-    margin: 100px 0;
+/*Store Page Editing*/
+/*Header*/
+.store-hero-image {
+    height: 45rem;
+    background-image: linear-gradient(rgba(255, 230, 230, 0.3), rgb(0, 0, 0, 1)), url(https://pbs.twimg.com/media/GHDfDsjXgAAdlKm?format=jpg&name=large);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.store-hero-text {
+    height: 100%;
+    width: 600px;
+    margin: 0 auto;
+    font-family: var(--font-headers);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+    text-align: center;
+    color: var(--contrast-color);
+}
+.products{
+    height: 30px;
 }
