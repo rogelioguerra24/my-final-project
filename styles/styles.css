@@ -202,6 +202,36 @@ footer p{
     text-align: center;
     color: var(--contrast-color);
 }
-.products{
-    height: 30px;
+.gallery{
+    height: 300px;
+}
+
+
+/*Library Page Editing*/
+/*Header*/
+.library-hero{
+    display: flex;
+    align-items: center;
+    height: 35rem;
+    overflow: hidden;
+    
+}
+.library-hero img{
+    height: 100%;
+}
+.library-hero div{
+    width: 500px;
+    margin: 0 auto;
+}
+.library-hero div h1{
+    font-family: var(--font-headers);
+    font-size: 3em;
+
+    color: var(--primary-color);
+}
+.library-hero div p{
+    font-family: var(--font-text);
+    
+    font-size: 1.3em;
+    font-weight: bold;
 }
