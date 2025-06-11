@@ -73,4 +73,51 @@
     .menuLinks-footer li a:hover {
         text-decoration: none;
     }
-}
+
+    /*This code is for designing the home page*/
+    .home-hero-image{
+        background-image: linear-gradient(rgba(255, 230, 230, 0.25), rgb(0, 0, 0, 1)), url(https://awsimages.detik.net.id/community/media/visual/2024/05/13/marvel-cinematic-universe_34.png?w=700&q=90);
+    }
+    .hero-text{
+        width: 400px;
+    }
+    .hero-text h1{
+        font-size: 3.5rem;
+    }
+    .hero-text p{
+        font-size: 1.2rem;
+    }
+    /*This following code is for designing the store page*/
+    .store-hero-image{
+        background-image: linear-gradient(rgba(255, 230, 230, 0.2), rgb(0, 0, 0, 1)), url(https://www.wdwinfo.com/wp-content/uploads/2025/01/Avengers-Reserve-Disneyland-Downtown-Disney-03.jpg);
+    }
+    .store-hero-text{
+        width: 400px;
+    }
+    .store-hero-text h1 {
+        font-size: 1.3em;
+    }
+    /*This following code is for designing the library page*/
+    .library-hero{
+        background-image: linear-gradient(rgba(255, 230, 230, 0.2), rgb(0, 0, 0, 1)), url(https://www.wdwinfo.com/wp-content/uploads/2025/01/Avengers-Reserve-Disneyland-Downtown-Disney-03.jpg);
+    }
+    .library-hero div{
+        width: 400px;
+    }
+    .library-hero div h1 {
+        font-size: 3em;
+        color: var(--contrast-color);
+    }
+    .library-hero div p {
+        font-size: 1.2em;
+    }
+} 
+
+
+
+
+@media (min-width: 1900px) {
+    .home-hero-image{
+        background-image: linear-gradient(rgba(255, 230, 230, 0.25), rgb(0, 0, 0, 1)), url(https://cdn.marvel.com/content/1x/theavengers_lob_mas_dsk_03_1.jpg);
+    }
+}  

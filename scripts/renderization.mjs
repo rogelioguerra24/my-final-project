@@ -38,6 +38,13 @@ export async function loadHeaderFooter(){
     menuElement.classList.toggle('open');
     burgerElement.classList.toggle('open'); //toggle means change class list of in this case'open'
   });
-    
-   
+}
+
+// retrieve data from localstorage
+export function getLocalStorage(key) {
+  return JSON.parse(localStorage.getItem(key));
+}
+// save data to local storage
+export function setLocalStorage(key, data) {
+  localStorage.setItem(key, JSON.stringify(data));
 }
