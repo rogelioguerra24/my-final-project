@@ -11,7 +11,7 @@ burgerElementFilter.addEventListener('click', () => {
 });
 
 const cards = document.getElementById("displayCards");
-const url = "../data/products.json"
+const url = "data/products.json"
 
 async function main(){
     const objectProducts = await apiFetch(url);

@@ -53,9 +53,16 @@ export async function loadHeaderFooter(){
     burgerElement.classList.toggle('open'); //toggle means change class list of in this case'open'
   });
   
-  const superScript = document.querySelector("#numberItems");
+
   length = getLocalStorage("so-cart").length;
-  superScript.innerHTML = length;
+  const superScript = document.querySelector("#numberItems");
+
+  if (length >= 1) {
+    superScript.innerHTML = length;
+  } else{
+    superScript.innerHTML =`0`;
+  }
+
 }
 
 // retrieve data from localstorage
