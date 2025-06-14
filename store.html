@@ -21,6 +21,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&family=Bebas+Neue&display=swap" rel="stylesheet">
 
     <script type="module" src="scripts/main.js"></script>
+    <script type="module" src="scripts/store.js"></script>
 
     <title>Marvel Store</title>
 </head>
@@ -28,15 +29,30 @@
     <header id="main-header"></header>
     <nav id="main-navigation"></nav>
 
-    <main>
+    <main class="storeSection">
         <section class="store-hero-image">
             <div class="store-hero-text">
                 <h1>All the Marvel power, just one click away</h1>
             </div>
         </section>
 
-        <section class="gallery">
-            <div id="filters"></div>
+        <section class="section-gallery">
+            <div class="filters">
+                <button aria-label="Button" id="buttonDisplay"></button>
+                <nav id="animated-metFilter">
+                    <ul class="menuLinksFilter">
+                        <li><a id="category-all">All Products</a></li>
+                        <li><a id="category-action-figure">Action Figures</a></li>
+                        <li><a id="category-clothing">Clothing</a></li>
+                        <li><a id="category-collectible">Collectibles</a></li>
+                        <li><a id="category-poster">Posters</a></li>
+                        <li><a id="category-accessory">Accessories</a></li>
+                        <li><a id="category-homeware">Homeware</a></li>
+                        <li><a id="category-stationery">Stationery</a></li>
+                        <li><a id="category-backpack">Backpacks</a></li>
+                    </ul>
+                </nav>
+            </div>
             <div id="displayCards"></div>
         </section>
     </main>

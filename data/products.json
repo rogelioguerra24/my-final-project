@@ -1,0 +1,251 @@
+{ "products" : [
+        {
+            "IdProduct": 1,
+            "NameProduct": "Iron Man Action Figure",
+            "DescriptionProduct": "Highly detailed Iron Man figure with articulated joints and light-up features.",
+            "ImageProduct": "https://wongfood.vtexassets.com/arquivos/ids/688605/Figura-Marvel-Avengers-Titan-Hero-Series-Iron-Man-2-351668307.jpg?v=638424922046130000",
+            "PriceProduct": 24.99,
+            "Category": "Action Figure"
+        },
+        {
+            "IdProduct": 2,
+            "NameProduct": "Spider-Man Hoodie",
+            "DescriptionProduct": "Comfortable red hoodie featuring the Spider-Man logo and web designs.",
+            "ImageProduct": "https://m.media-amazon.com/images/I/610Ggphjr+L.jpg",
+            "PriceProduct": 39.99,
+            "Category": "Clothing"
+        },
+        {
+            "IdProduct": 3,
+            "NameProduct": "Captain America Shield Replica",
+            "DescriptionProduct": "Premium replica of Captain America's iconic shield, perfect for cosplay or display.",
+            "ImageProduct": "https://media.gamestop.com/i/gamestop/20015355n_ALT01?$pdp$",
+            "PriceProduct": 79.99,
+            "Category": "Collectible"
+        },
+        {
+            "IdProduct": 4,
+            "NameProduct": "Avengers Endgame Poster",
+            "DescriptionProduct": "Glossy poster featuring the full Avengers team from Endgame.",
+            "ImageProduct": "https://www.wolfandrocket.com/cdn/shop/files/1_e7552058-f41a-4e2e-8a94-a366e40bdd41.jpg?v=1736529780&width=1080",
+            "PriceProduct": 14.99,
+            "Category": "Poster"
+        },
+        {
+            "IdProduct": 5,
+            "NameProduct": "Thor's Hammer Keychain",
+            "DescriptionProduct": "Miniature replica of Mjolnir as a durable metal keychain.",
+            "ImageProduct": "https://i.ebayimg.com/images/g/AoAAAOSwDw5fQydM/s-l1200.jpg",
+            "PriceProduct": 7.49,
+            "Category": "Accessory"
+        },
+        {
+            "IdProduct": 6,
+            "NameProduct": "Black Panther T-Shirt",
+            "DescriptionProduct": "Cotton t-shirt with a bold Black Panther logo print.",
+            "ImageProduct": "https://www.redwolf.in/image/cache/catalog/t-shirts/drop-cuts/black-panther-suit-drop-cut-t-shirt-india-525x700.jpg?m=1698311335",
+            "PriceProduct": 19.99,
+            "Category": "Clothing"
+        },
+        {
+            "IdProduct": 7,
+            "NameProduct": "Marvel Legends Loki Figure",
+            "DescriptionProduct": "Collectible Loki figure from the Marvel Legends series",
+            "ImageProduct":"https://home.ripley.com.pe/Attachment/WOP_5/2032295922215/2032295922215_2.jpg",
+            "PriceProduct": 29.99,
+            "Category": "Action Figure"
+        },
+        {
+            "IdProduct": 8,
+            "NameProduct": "Doctor Strange Magic Mug",
+            "DescriptionProduct": "Heat-reactive mug that reveals mystical designs when filled with hot liquid.",
+            "ImageProduct": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjGaMmzYz7S66QlYCGm6ExE3FTT1WTH6RoVQ&s",
+            "PriceProduct": 12.99,
+            "Category": "Homeware"
+        },
+        {
+            "IdProduct": 9,
+            "NameProduct": "WandaVision Notebook",
+            "DescriptionProduct": "Stylish notebook inspired by the WandaVision series, ideal for fans and writers.",
+            "ImageProduct": "https://i.pinimg.com/736x/74/56/f2/7456f29950f91c2891d45e5992472b36.jpg",
+            "PriceProduct": 8.99,
+            "Category": "Stationery"
+        },
+        {
+            "IdProduct": 10,
+            "NameProduct": "Hulk Smash Backpack",
+            "DescriptionProduct": "Durable backpack with padded straps and a Hulk-themed design.",
+            "ImageProduct": "https://multimedia.bbycastatic.ca/multimedia/products/500x500/179/17984/17984976.jpeg",
+            "PriceProduct": 34.99,
+            "Category": "Backpack"
+        },
+        {
+            "IdProduct": 11,
+            "NameProduct": "Ant-Man Action Figure",
+            "DescriptionProduct": "Poseable Ant-Man figure with mini-figure accessory.",
+            "ImageProduct": "https://i5.walmartimages.com/seo/Marvel-Ant-Man-The-Wasp-Legends-Series-Ant-Man-6-inch-Action-Figure_f00c0e09-1cef-478f-b371-249c4ea9578a_1.510c1f08dbbd9d579b03289dbb9e8f0f.jpeg",
+            "PriceProduct": 22.99,
+            "Category": "Action Figure"
+        },
+        {
+            "IdProduct": 12,
+            "NameProduct": "Groot Hoodie",
+            "DescriptionProduct": "Soft hoodie with Groot print and leaf patterns.",
+            "ImageProduct": "https://m.media-amazon.com/images/I/6137abHjliL._AC_UY1000_.jpg",
+            "PriceProduct": 36.99,
+            "Category": "Clothing"
+        },
+        {
+            "IdProduct": 13,
+            "NameProduct": "Infinity Gauntlet Replica",
+            "DescriptionProduct": "Life-size Infinity Gauntlet with LED stones.",
+            "ImageProduct": "https://www.sideshow.com/cdn-cgi/image/quality=90,f=auto/https://www.sideshow.com/storage/product-images/903428/infinity-gauntlet_marvel_gallery_5c4cce174a32e.jpg",
+            "PriceProduct": 99.99,
+            "Category": "Collectible"
+        },
+        {
+            "IdProduct": 14,
+            "NameProduct": "Guardians of the Galaxy Poster",
+            "DescriptionProduct": "Colorful poster of the Guardians team in space.",
+            "ImageProduct": "https://postermaniacs.pe/wp-content/uploads/2023/06/Guardians-of-the-Galaxy-2-a.jpg",
+            "PriceProduct": 13.49,
+            "Category": "Poster"
+        },
+        {
+            "IdProduct": 15,
+            "NameProduct": "Captain Marvel Keychain",
+            "DescriptionProduct": "Metal keychain featuring Captain Marvel's emblem.",
+            "ImageProduct": "https://m.media-amazon.com/images/I/51x7kvDB7wL._AC_UY1100_.jpg",
+            "PriceProduct": 6.99,
+            "Category": "Accessory"
+        },
+        {
+            "IdProduct": 16,
+            "NameProduct": "Iron Man Heat Mug",
+            "DescriptionProduct": "Color-changing mug with Iron Man’s arc reactor.",
+            "ImageProduct": "https://www.keerimeeri.com/wp-content/uploads/2020/12/61SGETThdVL._AC_SL1500_.jpg",
+            "PriceProduct": 14.49,
+            "Category": "Homeware"
+        },
+        {
+            "IdProduct": 17,
+            "NameProduct": "Avengers Stationery Set",
+            "DescriptionProduct": "Includes notebook, pens, and stickers with Avengers branding.",
+            "ImageProduct": "https://kidslicensing.com/wp-content/uploads/2021/08/MV15824_A.jpg",
+            "PriceProduct": 9.99,
+            "Category": "Stationery"
+        },
+        {
+            "IdProduct": 18,
+            "NameProduct": "Spider-Man Backpack",
+            "DescriptionProduct": "Backpack with multiple compartments and web design.",
+            "ImageProduct": "https://i5.walmartimages.com/seo/Marvel-Spider-Man-12-inch-Medium-Backpack-Spiderman-Sketch_1bc424e6-18f2-41c7-92df-b3dd8bf564dd.45518467e794c191d98c059e7d661b1a.jpeg",
+            "PriceProduct": 29.99,
+            "Category": "Backpack"
+        },
+        {
+            "IdProduct": 19,
+            "NameProduct": "Hawkeye Action Figure",
+            "DescriptionProduct": "Bow-equipped Hawkeye figure with movable limbs.",
+            "ImageProduct": "https://m.media-amazon.com/images/I/61UlxNIBtEL._AC_SL1500_.jpg",
+            "PriceProduct": 21.99,
+            "Category": "Action Figure"
+        },
+        {
+            "IdProduct": 20,
+            "NameProduct": "Winter Soldier T-Shirt",
+            "DescriptionProduct": "T-shirt with the Winter Soldier arm design.",
+            "ImageProduct": "https://m.media-amazon.com/images/I/61Uuob5COeL._AC_UY1000_.jpg",
+            "PriceProduct": 17.99,
+            "Category": "Clothing"
+        },
+        {
+            "IdProduct": 21,
+            "NameProduct": "Thanos Bust Collectible",
+            "DescriptionProduct": "Detailed bust of Thanos for display.",
+            "ImageProduct": "https://queenstudios.shop/cdn/shop/products/QueenStudiosThanosEndgameHalf-BodyBust_46e6d194-3a9a-4992-b37f-b4d7b358bd8f_620x.jpg?v=1626681421",
+            "PriceProduct": 59.99,
+            "Category": "Collectible"
+        },
+        {
+            "IdProduct": 22,
+            "NameProduct": "Black Widow Poster",
+            "DescriptionProduct": "High-quality print poster of Black Widow in action.",
+            "ImageProduct": "https://concertposter.org/wp-content/uploads/2020/05/BlackWidowFromAVEG-Bluish-rop.jpg",
+            "PriceProduct": 11.99,
+            "Category": "Poster"
+        },
+        {
+            "IdProduct": 23,
+            "NameProduct": "Falcon Keychain",
+            "DescriptionProduct": "Falcon wings mini keychain made of zinc alloy.",
+            "ImageProduct": "https://m.media-amazon.com/images/I/81eBisyhQzL._AC_UY1100_.jpg",
+            "PriceProduct": 5.49,
+            "Category": "Accessory"
+        },
+        {
+            "IdProduct": 24,
+            "NameProduct": "Wakanda Forever Mug",
+            "DescriptionProduct": "Ceramic mug with 'Wakanda Forever' design.",
+            "ImageProduct": "https://uncannybrands.com/cdn/shop/products/MW1-MVM-BPA1-295_1200x.jpg?v=1667594705",
+            "PriceProduct": 10.99,
+            "Category": "Homeware"
+        },
+        {
+            "IdProduct": 25,
+            "NameProduct": "Loki Notebook",
+            "DescriptionProduct": "Notebook with green and gold Loki-inspired cover.",
+            "ImageProduct": "https://m.media-amazon.com/images/I/71QVjQ1ZoqL._AC_UF1000,1000_QL80_.jpg",
+            "PriceProduct": 8.49,
+            "Category": "Stationery"
+        },
+        {
+            "IdProduct": 26,
+            "NameProduct": "Captain Marvel Backpack",
+            "DescriptionProduct": "Backpack with star emblem and bold red colors.",
+            "ImageProduct": "https://www.roadgods.com/cdn/shop/files/side45_41421f3c9c4f41a591024711ce201d88_2nd.jpg?v=1739438934",
+            "PriceProduct": 33.99,
+            "Category": "Backpack"
+        },
+        {
+            "IdProduct": 27,
+            "NameProduct": "Shang-Chi Action Figure",
+            "DescriptionProduct": "Shang-Chi figure with martial arts pose and accessories.",
+            "ImageProduct": "https://m.media-amazon.com/images/I/61MCob3XY8S._AC_SL1500_.jpg",
+            "PriceProduct": 26.99,
+            "Category": "Action Figure"
+        },
+        {
+            "IdProduct": 28,
+            "NameProduct": "Scarlet Witch Hoodie",
+            "DescriptionProduct": "Red hoodie with hex patterns inspired by Wanda.",
+            "ImageProduct": "https://cdn.media.amplience.net/s/hottopic/15794079_hi?$productMainDesktop$&fmt=auto",
+            "PriceProduct": 41.99,
+            "Category": "Clothing"
+        },
+        {
+            "IdProduct": 29,
+            "NameProduct": "Iron Spider Replica",
+            "DescriptionProduct": "Metal replica of the Iron Spider suit chest emblem.",
+            "ImageProduct": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiAVd2PBXa_1tXhx2zizqaH_PamwlWz6VZdPtVFvg287TlXHshM2Aum61TJ5IOJdX0zW2DAslRvWCzrKN2M2wUeC_VTFu-RhfcyfBnL-kSe62R3yC74vcteol45fs88txrp8OWJUNhRm7SZ/s1600/mj103.jpg",
+            "PriceProduct": 89.99,
+            "Category": "Collectible"
+        },
+        {
+            "IdProduct": 30,
+            "NameProduct": "Multiverse Madness Poster",
+            "DescriptionProduct": "Poster from the Multiverse of Madness movie.",
+            "ImageProduct": "https://i.ebayimg.com/images/g/idcAAOSwNuljM7nD/s-l1200.jpg",
+            "PriceProduct": 12.49,
+            "Category": "Poster"
+        },
+        {
+            "IdProduct": 31,
+            "NameProduct": "Marvel Keychain - Iron Man Helmet",
+            "DescriptionProduct": "Metal keychain featuring Iron Man's helmet design, perfect for backpacks or keys.",
+            "ImageProduct": "https://m.media-amazon.com/images/I/71-CNy4QNgL._AC_UY1100_.jpg",
+            "PriceProduct":  15.99,
+            "Category": "Accessory"
+        }
+    ]    
+}

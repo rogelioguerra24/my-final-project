@@ -6,9 +6,23 @@ export function renderWithTemplate(template, parentElement, data, callback) {
 }
 
 export async function loadTemplate(path){
-  const response = await fetch(path);
-  const template = await response.text();
-  return template;
+  try{
+    const response = await fetch(path);
+    const template = await response.text();
+    return template;
+  }catch(error){
+    console.log(`You error is ${error}`)
+  }
+}
+
+export async function apiFetch(url){
+  try{
+    const response = await fetch(url);
+    const result = await response.json();
+    return result;
+  }catch(error){
+    console.log("You error is", error);
+  }
 }
 
 export async function loadHeaderFooter(){
@@ -38,6 +52,10 @@ export async function loadHeaderFooter(){
     menuElement.classList.toggle('open');
     burgerElement.classList.toggle('open'); //toggle means change class list of in this case'open'
   });
+  
+  const superScript = document.querySelector("#numberItems");
+  length = getLocalStorage("so-cart").length;
+  superScript.innerHTML = length;
 }
 
 // retrieve data from localstorage
@@ -47,4 +65,104 @@ export function getLocalStorage(key) {
 // save data to local storage
 export function setLocalStorage(key, data) {
   localStorage.setItem(key, JSON.stringify(data));
+}
+
+//This code is for the Library Page
+export function createCard(containerInternal, elementArray){
+    containerInternal.innerHTML = "";
+
+    elementArray.forEach(element => {
+        let box = document.createElement("div");
+        let link = document.createElement("a");
+        let img = document.createElement("img");
+        let name = document.createElement("h2");
+        let description = document.createElement("p");
+        let button = document.createElement("button");
+        
+        //This following code is to obtain the path for the images
+        const extension = element.thumbnail.extension;
+        const path = element.thumbnail.path;
+        const urlImage = `${path}/landscape_large.${extension}`;
+
+        img.setAttribute("src", urlImage);
+        link.appendChild(img);
+
+        name.innerHTML = element.name;
+        description.innerHTML = element.description;
+      
+        box.appendChild(link);
+        box.appendChild(name);
+        box.appendChild(description);
+        box.appendChild(button);
+
+        button.innerHTML = `Add to Favorites`;
+        button.addEventListener("click", () => addFavoriteItem(element) )
+
+        containerInternal.appendChild(box);
+    });
+
+}
+
+function addFavoriteItem(element){
+    try {
+        const cart = getLocalStorage("favorites") || [];
+        cart.push(element);
+        setLocalStorage("favorites", cart);
+        
+    } catch (error) {
+        console.error("Error adding element to cart:", error);
+    }
+}
+//This code is for the store Page
+export function createCards(cards, ourProducts) {
+    cards.innerHTML = ""; // Clear previous content
+
+
+    ourProducts.forEach(product => {
+        let card = document.createElement("div");
+        let name = document.createElement("h3");
+        let price = document.createElement("p");
+        let description = document.createElement("p");
+        let img = document.createElement("img");
+        let button = document.createElement("button");
+        
+
+        name.textContent = product.NameProduct;
+        price.innerHTML = `<strong>Price:</strong> $${product.PriceProduct.toFixed(2)}`;
+        description.innerHTML = product.DescriptionProduct;
+
+        img.setAttribute("src", product.ImageProduct);
+        img.setAttribute("alt", `${product.NameProduct}`);
+        img.setAttribute("loading", "lazy");
+
+        card.appendChild(img);
+        card.appendChild(name);
+        card.appendChild(price);
+        card.appendChild(description);
+        card.appendChild(button);
+
+        button.innerHTML = `Add to cart`;
+        button.addEventListener("click",() => addProductToCart(product));//this function add a respective item to the cart
+
+
+        /*card.addEventListener("click", () => {
+            displayMembershipDetails(product)
+        })*/
+
+        cards.appendChild(card);
+    });
+}
+
+
+function addProductToCart(product){
+    try {
+        const cart = getLocalStorage("so-cart") || [];
+        cart.push(product);
+        setLocalStorage("so-cart", cart);
+        const superScript = document.querySelector("#numberItems");
+        length = getLocalStorage("so-cart").length;
+        superScript.innerHTML = length;
+    } catch (error) {
+        console.error("Error adding product to cart:", error);
+    }
 }

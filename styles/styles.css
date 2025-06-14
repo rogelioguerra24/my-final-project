@@ -205,11 +205,100 @@ footer p{
 .store-hero-text h1{
     padding: 0 0 80px;
 }
-.gallery{
-    height: 300px;
+/*This following code is for designing the cards of teh store page*/
+.storeSection{
+    background-color:  var(--secondary-color);
+}
+.section-gallery{
+    width: 1100px;
+    margin: 0 auto ;
+    padding: 20px 0;
+    display: flex;
+    gap: 10px;
+}
+.filters{
+    width: 400px;
+}
+.filters nav{
+    position: sticky;
+    top: 0;
+    width: 230px;
+}
+
+#buttonDisplay { 
+    display: none; 
+}
+.menuLinksFilter{
+    background-color: var(--secondary-color);
+    font-family: var(--font-headers);
+    font-size: 1.4rem;
+    display: block;
+    overflow: hidden;
+    border-radius: 8px;
+}
+.menuLinksFilter li a {
+    display: inline-block; /*It lets me interact with the a tag*/
+    cursor: pointer;
+    margin: 0 ;
+    padding: 8px 0 8px 8px;
+    width: 100%;
+    color: var(--contrast-color);
+}
+.menuLinksFilter a:hover{
+    background-color: var(--primary-color);
+    color: var(--color-logo-one);
+    
 }
 
 
+
+
+
+
+
+
+
+
+#displayCards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    
+}
+#displayCards div{
+    font-family: var(--font-text);
+    font-size: 17px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    height: 400px;
+    background-color: var(--contrast-color);
+    padding: 5px;
+    border-radius: 8px;
+}
+#displayCards div img{
+    height: 70%;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+#displayCards div button{
+    cursor: pointer;
+    border: none;
+    width: 100px;
+    padding: 2px;
+    border-radius: 3px;
+    font-size: 0.9em;
+    font-family: var(--font-headers);
+    background-color: black;
+    color: var(--contrast-color);
+}
+#displayCards div button:active{
+    transform: scale(0.9);
+}
 /*Library Page Editing*/
 /*Header*/
 .library-hero{
@@ -236,4 +325,201 @@ footer p{
     font-family: var(--font-text);
     color: var(--contrast-color);
     font-size: 1.3em;
+}
+.searcher {
+    height: 45vh;
+    background-image: url("https://wallpapergod.com/images/hd/4k-marvel-3840X2160-wallpaper-q19wlbg4lrsop2k8.jpeg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.searcherBar {
+    width: 100%;
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: var(--contrast-color);
+    font-family: var(--font-headers);
+    font-size: 2.5em;
+    padding: 30px 0;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#characterSearch{
+    width: 400px;
+    border: none;
+    padding: 5px;
+    font-size: 1.5rem;
+    font-family: var(--font-text);
+}
+
+
+/*https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS6eTvMTjrP4obpbTDjrYjYqxw5Vy349T0K3Z8LqdcKAXfvY080UrXFJ3Ke0ucjuXTX2Y&usqp=CAU*/
+#displayCardsLibrary{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    text-align: center;
+    width: 1000px;
+    margin: 0 auto;
+    gap: 10px;
+    padding: 30px 0;
+}
+
+#displayCardsLibrary div{
+    min-height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--font-color);
+    padding: 5px;
+    border-radius: 8px;
+}
+#displayCardsLibrary div h2{
+    font-family: var(--font-headers);
+}
+
+#displayCardsLibrary div p{
+    font-family: var(--font-text);
+}
+
+#displayCardsLibrary div button{
+    font-family: var(--font-headers);
+    cursor: pointer;
+    border: none;
+    padding: 3px 5px ;
+    border-radius: 3px;
+    font-size: 1.3em;
+    font-family: var(--font-headers);
+    background-color: black;
+    color: var(--contrast-color);
+}
+
+#displayCardsLibrary div button:active {
+    transform: scale(0.9);
+}
+#displayCardsLibrary div button:hover{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+
+.librarySection{
+    display: flex;
+    flex-direction: column;
+}
+
+/*This desgin is for the cart page*/
+#numberItems {
+  position: absolute;
+  background-color: rgb(107, 167, 107);
+  color: var(--contrast-color);
+  font-weight: bold;
+  font-size: 1em;
+  padding: 5px;
+  border-radius: 8px;
+  top: 20px;
+  right: 9px;
+  border-color: none;
+}
+
+.cart-main {
+    background-color: #F7EDE2;
+}
+.products {
+    width: 700px;
+    margin: 0 auto;
+    min-height: 50vh;
+}
+.product-list{
+    display: flex;
+    flex-direction: column;
+    
+    gap: 10px;
+}
+.products h1{
+    font-family: var(--font-headers);
+    font-size: 3rem;
+    padding: 10px 0 ;
+    color: var(--secondary-color);
+}
+.cart-card {
+    padding: 10px;
+    background-color: var(--contrast-color);
+    border-radius: 8px;
+    font-size: 1.28em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "image title"
+    "image description"
+    "image price"
+    "image button";
+    
+    gap: 0rem;
+    align-items: center;
+    text-align: right;
+}
+.cart-card img {
+    width: 200px;
+    align-items: center;
+    grid-area: image;
+}
+.cart-card h2 {
+    grid-area: title;
+    font-family: var(--font-headers);
+}
+.cart-card__description {
+    grid-area: description;
+    font-family: var(--font-text);
+}
+.cart-card__price {
+    grid-area: price;
+    font-family: var(--font-text);
+}
+.cart-card__button {
+    grid-area: button;
+    font-family: var(--font-headers);
+    cursor: pointer;
+    border: none;
+    padding: 2px;
+    border-radius: 3px;
+    font-size: 0.9em;
+    font-family: var(--font-headers);
+    background-color: black;
+    color: var(--contrast-color);
+}
+.cart-card__button:active {
+    transform: scale(0.9);
+}
+.cart-card__button:hover{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.list-total{
+    font-family: var(--font-headers);
+    font-size: 2.5rem;
+    text-align: right;
+    padding: 10px 0 ;
+}
+.empty{
+    background-color: var(--font-color);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+}
+
+.empty p {
+    font-family: var(--font-headers);
+    font-size: 3rem;
+    text-align: center;
 }

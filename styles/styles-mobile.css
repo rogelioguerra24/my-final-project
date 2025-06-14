@@ -42,6 +42,9 @@
         padding: 0 0.5rem 0.5rem;
         justify-self: end;
     }
+    #numberItems {
+       display: none;
+    }
 
     /*Footer Styling*/
     footer{
@@ -57,7 +60,7 @@
         color: var(--contrast-color);
     }
     .footer-social{
-        
+
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         gap: 10px;
         padding: 20px 10px;
@@ -89,7 +92,7 @@
     }
     /*This following code is for designing the store page*/
     .store-hero-image{
-        background-image: linear-gradient(rgba(255, 230, 230, 0.2), rgb(0, 0, 0, 1)), url(https://www.wdwinfo.com/wp-content/uploads/2025/01/Avengers-Reserve-Disneyland-Downtown-Disney-03.jpg);
+        background-image: linear-gradient(rgba(255, 230, 230, 0.2), rgb(0, 0, 0, 1)), url(https://i.redd.it/1gom3fw5j4m71.jpg);
     }
     .store-hero-text{
         width: 400px;
@@ -99,7 +102,7 @@
     }
     /*This following code is for designing the library page*/
     .library-hero{
-        background-image: linear-gradient(rgba(255, 230, 230, 0.2), rgb(0, 0, 0, 1)), url(https://www.wdwinfo.com/wp-content/uploads/2025/01/Avengers-Reserve-Disneyland-Downtown-Disney-03.jpg);
+        background-image: linear-gradient(rgba(255, 230, 230, 0.2), rgb(0, 0, 0, 1)), url(https://i.ebayimg.com/images/g/GIAAAOSwV69c4dvH/s-l1200.jpg);
     }
     .library-hero div{
         width: 400px;
@@ -111,6 +114,58 @@
     .library-hero div p {
         font-size: 1.2em;
     }
+    /*This code is for design of the store page*/
+    .section-gallery{
+        flex-direction: column;
+        width: 400px;
+    }
+    
+    .filters nav{
+        width: 400px;
+        
+    }
+    #displayCards{
+        grid-template-columns: 1fr 1fr;
+    
+    }
+    #buttonDisplay { 
+        display: block;  
+        width: 100%;
+        padding: 10px 0;
+        border: none;
+        background-color: white;
+        font-family: var(--font-headers);
+        font-size: 30px;
+        color: var(--primary-color);
+        border-radius: 8px;
+    }
+    #buttonDisplay::before {
+        content: "Filters";
+    }
+    #buttonDisplay.open::before {
+        content: "See what's next ↓";
+    }
+    #animated-metFilter {
+        display: grid; 
+        grid-template-rows: 0fr; /*Here you define the start*/
+        transition: grid-template-rows 0.5s ease-out; /*Here you define the transition */
+        
+    }
+    #animated-metFilter ul {
+        overflow: hidden; /*Here you hidden the overflow*/
+        background-color: #FCC200;
+    }
+    #animated-metFilter a {
+        
+        color: var(--secondary-color);
+    }
+    #animated-metFilter.open {
+        grid-template-rows: 1fr; /*Here you define the end*/
+    }
+    .menuLinksFilter a:hover{
+        background-color: #FCC200;
+        color: var(--contrast-color);
+    }
 } 
 
 
@@ -120,4 +175,5 @@
     .home-hero-image{
         background-image: linear-gradient(rgba(255, 230, 230, 0.25), rgb(0, 0, 0, 1)), url(https://cdn.marvel.com/content/1x/theavengers_lob_mas_dsk_03_1.jpg);
     }
+
 }  
