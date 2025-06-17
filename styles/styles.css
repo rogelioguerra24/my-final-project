@@ -8,8 +8,8 @@
 }
 
 * {
-    margin: 0em;
-    padding: 0em;
+    margin: 0px;
+    padding: 0px;
 }
 
 /*This part of the code is for removing the font style and text decoration for every nav*/
@@ -131,7 +131,7 @@ footer p{
     width: 600px;
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    margin: 0px auto;
     gap: 25px;
     padding: 0 0 10px;
     text-align: center;
@@ -180,12 +180,40 @@ footer p{
     transform: scale(0.9);
 }
 
+/*Section gallery in hoem page*/
+.main-home{
+    background-color: black;
+}
+.animation{
+    width: 800px;
+    margin: 0px auto;
+    font-family: var(--font-headers);
+    font-size: 2.5em;
+    text-align: center;
+    color: var(--primary-color);
+    height: 100vh;
+}
+#trend-cards {
+    display: flex;
+    height: 500px;
 
+}
+#trend-cards img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 8;
+}
+#trend-cards img:hover{
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
 /*Store Page Editing*/
 /*Header*/
 .store-hero-image {
     height: 45rem;
-    background-image: linear-gradient(rgba(255, 230, 230, 0.2), rgb(0, 0, 0, 1)), url(https://pbs.twimg.com/media/GHDfDsjXgAAdlKm.jpg:large);
+    background-image: linear-gradient(rgba(255, 230, 230, 0.2), rgb(0, 0, 0, 1)), url(https://www.komar.de/media/cms/fileadmin/user_upload/Category/Fototapeten/Marvel/komar-fototapeten-marvel.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -193,7 +221,7 @@ footer p{
 .store-hero-text {
     height: 100%;
     width: 100%;
-    margin: 0 auto;
+    margin: 0px auto;
     font-family: var(--font-headers);
     display: flex;
     align-items: end;
@@ -211,7 +239,7 @@ footer p{
 }
 .section-gallery{
     width: 1100px;
-    margin: 0 auto ;
+    margin: 0px auto ;
     padding: 20px 0;
     display: flex;
     gap: 10px;
@@ -239,7 +267,7 @@ footer p{
 .menuLinksFilter li a {
     display: inline-block; /*It lets me interact with the a tag*/
     cursor: pointer;
-    margin: 0 ;
+    margin: 0px ;
     padding: 8px 0 8px 8px;
     width: 100%;
     color: var(--contrast-color);
@@ -247,17 +275,7 @@ footer p{
 .menuLinksFilter a:hover{
     background-color: var(--primary-color);
     color: var(--color-logo-one);
-    
 }
-
-
-
-
-
-
-
-
-
 
 #displayCards{
     display: grid;
@@ -312,7 +330,7 @@ footer p{
 }
 .library-hero div{
     width: 900px;
-    margin: 0 auto;
+    margin: 0px auto;
     text-align: center;
     padding: 0 0 60px;
 }
@@ -328,6 +346,7 @@ footer p{
 }
 .searcher {
     height: 45vh;
+    width: 100%;
     background-image: url("https://wallpapergod.com/images/hd/4k-marvel-3840X2160-wallpaper-q19wlbg4lrsop2k8.jpeg");
     background-size: cover;
     background-position: center;
@@ -339,7 +358,7 @@ footer p{
 .searcherBar {
     width: 100%;
     text-align: center;
-    background-color: var(--secondary-color);
+    background-color: black;
     color: var(--contrast-color);
     font-family: var(--font-headers);
     font-size: 2.5em;
@@ -358,7 +377,6 @@ footer p{
     font-family: var(--font-text);
 }
 
-
 /*https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSS6eTvMTjrP4obpbTDjrYjYqxw5Vy349T0K3Z8LqdcKAXfvY080UrXFJ3Ke0ucjuXTX2Y&usqp=CAU*/
 #displayCardsLibrary{
     display: grid;
@@ -366,7 +384,7 @@ footer p{
     align-items: center;
     text-align: center;
     width: 1000px;
-    margin: 0 auto;
+    margin: 0px auto;
     gap: 10px;
     padding: 30px 0;
 }
@@ -379,6 +397,10 @@ footer p{
     background-color: var(--font-color);
     padding: 5px;
     border-radius: 8px;
+    transition: transform 0.4s ease
+}
+#displayCardsLibrary div:hover{
+    transform: scale(1.1);
 }
 #displayCardsLibrary div h2{
     font-family: var(--font-headers);
@@ -414,10 +436,10 @@ footer p{
     flex-direction: column;
 }
 
-/*This desgin is for the cart page*/
+/*This design is for the cart page*/
 #numberItems {
   position: absolute;
-  background-color: rgb(107, 167, 107);
+  background-color: var(--secondary-color);
   color: var(--contrast-color);
   font-weight: bold;
   font-size: 1em;
@@ -425,7 +447,7 @@ footer p{
   border-radius: 8px;
   top: 20px;
   right: 9px;
-  border-color: none;
+  
 }
 
 .cart-main {
@@ -433,13 +455,12 @@ footer p{
 }
 .products {
     width: 700px;
-    margin: 0 auto;
+    margin: 0px auto;
     min-height: 50vh;
 }
 .product-list{
     display: flex;
     flex-direction: column;
-    
     gap: 10px;
 }
 .products h1{
@@ -523,3 +544,199 @@ footer p{
     font-size: 3rem;
     text-align: center;
 }
+
+/*This is for desing the favorite page*/
+.main-favorites{
+    background-color:#F7EDE2;
+}
+.favorites{
+    width: 1000px;
+    margin: 0px auto;
+    min-height: 50vh;
+}
+.favorites h1 {
+    font-family: var(--font-headers);
+    font-size: 3em;
+}
+.favorites-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 10px;
+    padding: 0 0 30px 0;
+}
+.favorite-card {
+    padding: 10px;
+    background-color: var(--contrast-color);
+    border-radius: 8px;
+    font-size: 1.28em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.favorite-card img {
+    width: 100%;
+    align-items: center;
+  
+}
+.favorite-card h2 {
+ 
+    font-family: var(--font-headers);
+}
+.favorite-card__description {
+    font-size: 0.8em;
+    font-family: var(--font-text);
+}
+
+.favorite-card__button {
+ 
+    font-family: var(--font-headers);
+    cursor: pointer;
+    border: none;
+    padding: 2px;
+    border-radius: 3px;
+    font-size: 0.9em;
+    font-family: var(--font-headers);
+    background-color: black;
+    color: var(--contrast-color);
+}
+.favorite-card__button:active {
+    transform: scale(0.9);
+}
+.favorite-card__button:hover{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.empty{
+    background-color: var(--font-color);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+}
+
+.empty p {
+    font-family: var(--font-headers);
+    font-size: 3rem;
+    text-align: center;
+}
+
+/*This code is for the Disney page*/
+.disney-hero{
+    display: flex;
+    align-items: end;
+    height: 45rem;
+    overflow: hidden;
+    background-image: linear-gradient(rgba(255, 230, 230, 0.2), rgb(0, 0, 0, 1)), url(https://static1.srcdn.com/wordpress/wp-content/uploads/2024/12/mickey-mouse-as-iron-man-with-disney-avengers-marvel.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.disney-hero div{
+    width: 900px;
+    margin: 0px auto;
+    text-align: center;
+    padding: 0 0 60px;
+}
+.disney-hero div h1{
+    font-family: var(--font-headers);
+    font-size: 4em;
+    color: var(--contrast-color);
+}
+.disney-hero div p{
+    font-family: var(--font-text);
+    color: var(--contrast-color);
+    font-size: 1.3em;
+}
+
+.searcher2 {
+    height: 45vh;
+    width: 100%;
+    background-image: url("https://static1.srcdn.com/wordpress/wp-content/uploads/2022/10/Marvel-Avengers-Disney-Crossover-Comics.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#displayCardsDisneyLibrary{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+    text-align: center;
+   
+    margin: 0px auto;
+    gap: 10px;
+    padding: 30px 0;
+}
+
+#displayCardsDisneyLibrary div {
+    height: 320px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--font-color);
+    color: var(--secondary-color); 
+    padding: 0;
+    border-radius: 8px;
+    font-family: var(--font-text);
+    transition: transform 0.4s ease
+}
+#displayCardsDisneyLibrary div:hover{
+    transform: scale(1.1) ;
+    
+}
+
+#displayCardsDisneyLibrary div img {
+    width: 100%;
+    height:  250px;
+    object-fit: fill;
+    border-radius: 8px 8px 0 0;
+
+}
+/*This is for the animation of a loader*/
+.librarySection{
+    align-items: center;
+}
+.wireFrame{
+    display: flex;
+    height: 90vh;
+    align-items: center;
+}
+.loader{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    animation: loader 1.2s linear infinite ;
+}
+.loader::before,
+.loader::after{
+    content: "";
+    position: absolute;
+    border-radius: inherit;
+}
+.loader::before{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(#f0c 0%, var(--primary-color) 100%);
+}
+.loader::after{
+    width: 85%;
+    height: 85%;
+    background-color: var(--contrast-color);
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes loader {
+    to{
+        transform: rotate(360deg) ;
+    }
+}
+

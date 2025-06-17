@@ -22,7 +22,12 @@
         background-color: var(--secondary-color);
         color: var(--contrast-color);
     }
-
+    .logo{
+        width: 150px;
+    }
+    #main-header section a img{
+        width: 35px;
+    }
     /*To set or resize the button and its content*/
     #myButton {
         display:block;
@@ -92,7 +97,7 @@
     }
     /*This following code is for designing the store page*/
     .store-hero-image{
-        background-image: linear-gradient(rgba(255, 230, 230, 0.2), rgb(0, 0, 0, 1)), url(https://i.redd.it/1gom3fw5j4m71.jpg);
+        background-image: linear-gradient(rgba(255, 230, 230, 0.2), rgb(0, 0, 0, 1)), url(https://preview.redd.it/lwp8nfv0hup31.jpg?width=1080&crop=smart&auto=webp&s=ecdf3467ef853e5d9b7690e2d0880abb76829da1);
     }
     .store-hero-text{
         width: 400px;
@@ -115,13 +120,19 @@
         font-size: 1.2em;
     }
     /*This code is for design of the store page*/
+    .store-hero-text{
+        width: 100px;
+        margin: 0 auto;
+    }
     .section-gallery{
         flex-direction: column;
-        width: 400px;
+        width: 90%;
     }
-    
+    .filters{
+        width: 100%;
+    }
     .filters nav{
-        width: 400px;
+        width: 100%;
         
     }
     #displayCards{
@@ -165,6 +176,128 @@
     .menuLinksFilter a:hover{
         background-color: #FCC200;
         color: var(--contrast-color);
+    }
+    /*This following code is for the design of cart page*/
+    .products {
+        width: 350px;
+        margin: 0 auto;
+        min-height: 50vh;
+    }
+    .product-list{
+        font-size: 0.75em;
+    }
+    .cart-card__button {
+        max-width: 160px;
+    }
+    .cart-card img {
+        width: 150px;
+    }
+    /*This following code is for the design of library page*/
+    .searcherBar {
+        font-size: 1.5em;
+        flex-direction: column;
+    }
+    #characterSearch{
+        width: 250px;
+        border: none;
+        padding: 5px;
+        font-size: 1.5rem;
+        font-family: var(--font-text);
+    }
+    #displayCardsLibrary{
+        grid-template-columns: 1fr 1fr;
+        width: 90%;
+        font-size: 0.9em;
+    }
+    #displayCardsLibrary div {
+        justify-content: center;
+        min-height: 380px;
+        transition: none 
+    }
+    #displayCardsLibrary div:hover{
+    transform: none;
+    }
+    #displayCardsLibrary img{
+        width: 100%;
+    }
+    /*This following code is for the design of favorite page*/
+    .favorites{
+    width: 90%;
+    margin: 0 auto;
+    min-height: 50vh;
+    }
+    .favorites-list{
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+    }
+    .favorite-card img {
+        width: 100%;
+        height: 100px;
+        object-fit: cover;
+    }
+    .favorite-card{
+        font-size: 1em;
+    }
+    /*This following code is for the design of disney page*/
+    #displayCardsDisneyLibrary{
+        grid-template-columns: 1fr 1fr;
+        width: 90%;
+        margin: 0 auto;
+    }
+    #displayCardsDisneyLibrary div {
+        width: 100%;
+        padding: 0;
+        transform: none ;
+    }
+    #displayCardsDisneyLibrary div:hover {
+        transform: none;
+    }
+    #displayCardsDisneyLibrary div img{
+        width: 100%;
+    }
+    .disney-hero{
+        font-size: 0.9em;
+    }
+    /*Section gallery in hoem page*/
+    .main-home{
+        background-color: black;
+    }
+    .animation{
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+        font-family: var(--font-headers);
+        font-size: 1.5em;
+        text-align: center;
+        color: var(--primary-color);
+        height: 100vh;
+        align-items: center;
+    }
+    #trend-cards {
+      
+        width: 300px;
+        position: relative;
+        display: flex;
+        overflow: scroll;
+        height: 500px;
+
+    }
+    #trend-cards img{
+        width: 100%;
+        left: 0;
+        position: sticky;
+        flex-grow: 1;
+        object-fit: cover;
+        opacity: 8;
+        border-radius: 8px;
+        filter: contrast(120%);
+        scroll-snap-align: center;
+    }
+    #trend-cards img:hover{
+        width: 100%;
+        opacity: 8;
+        
     }
 } 
 

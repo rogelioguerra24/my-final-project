@@ -1,4 +1,3 @@
-import { loadHeaderFooter} from "./renderization.mjs"
+import { loadHeaderFooter } from "./renderization.mjs"
 
 loadHeaderFooter();
-
